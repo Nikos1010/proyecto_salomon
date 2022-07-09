@@ -1,0 +1,34 @@
+.inicio {
+    background-image: linear-gradient(rgba(0,0,194,0.5), rgba(243, 168, 19, 0.4)), url(/IMÁGENES/woman-on-hairdresser-salon.jpg);
+}
+
+.header {
+    padding: 1rem 0rem 3rem 0rem;
+
+    &.inicio {
+        background-position: center center;
+        background-size: cover;
+        /*Toma todo el tamaño disponible */
+
+        @include tablet {
+            min-height: 30rem;
+        }
+
+        .contenido-header {
+            @include tablet {
+                min-height: 30rem;
+            }
+        }
+    }
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        text-align: left;
+        color: $blanco;
+    }
+}

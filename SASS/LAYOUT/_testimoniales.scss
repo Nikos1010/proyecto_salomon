@@ -1,0 +1,26 @@
+.testimonial {
+    background-color: $RosaClaro;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: $negro;
+
+    blockquote {
+        padding-left: 5rem;
+        position: relative;
+        &::before {
+            content: '';
+            background-image: url(/img/testimoniales/comillas.png);
+            background-repeat: no-repeat;
+            width: 20rem;
+            height: 24rem;
+            display: block;
+            position: absolute;
+            left: -13rem;
+            top: -8rem;
+        }
+    }
+
+    p {
+        color: $negro;
+    }
+}

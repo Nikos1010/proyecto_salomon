@@ -1,0 +1,43 @@
+.imagen-contacto{
+    background-image: linear-gradient(rgba(100,100, 100, 0.5), rgba(100,100, 100, 0.5)), url('/IMÁGENES/imagen.contacto.jpg'); 
+    background-position: center center;
+    background-size: cover;
+    padding:  $separacion*3 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2{
+        font-size:4rem;
+        font-weight: $black;
+        color: $blanco;
+    }
+
+    p{
+        font-size: 2rem;
+        color: $blanco;
+    }
+    
+    a{
+        border: 5px solid darken($gris, 10);
+        font-size: 2.3rem;
+    }
+    
+    a:hover{
+        color:$negro;
+        background-color: $AzulClaro;
+        border: 5px solid darken($gris, 10);
+        border-style: double;
+    }
+}
+
+.imagen-contacto-form{
+    img{
+        width: 100%;
+        height: 45rem;
+        border-radius: 2rem;
+        border: 4px solid darken($RosaOscuro, 10);
+        border-style: double;
+    }
+}

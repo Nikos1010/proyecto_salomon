@@ -1,0 +1,19 @@
+@import 'BASE/variables';
+@import 'BASE/globales';
+@import 'BASE/mixins';
+@import 'BASE/normalize';
+@import 'BASE/utilidades';
+@import 'BASE/botones';
+
+/*Importación de User Interface IU */
+@import 'LAYOUT/footer';
+@import 'LAYOUT/header';
+@import 'LAYOUT/navegacion';
+@import 'LAYOUT/iconos';
+@import 'LAYOUT/anuncios';
+@import 'LAYOUT/contactar';
+@import 'LAYOUT/inferior';
+@import 'LAYOUT/testimoniales';
+
+/* Páginas internas*/
+@import 'internas/nosotros';
