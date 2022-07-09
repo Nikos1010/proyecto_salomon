@@ -10,15 +10,15 @@
         <form class="formP" method="POST" action="contacto/crear.php">
             <div class="inputt">
                 Nombre:
-                <input class="uno inputP" type="text" name="Nom">
+                <input class="inputP" type="text" name="nombre">
                 <br>
                 Correo:
-                <input class="dos inputP" type="text" name="corre">
+                <input class="inputP" type="text" name="email">
                 <br>
                 Telefono:
-                <input class="cuatro inputP" type="text" name="examen">
+                <input class="inputP" type="text" name="telefono">
                 <br>
-                <input class="cinco inputP" type="submit" value="enviar">
+                <input class="boton boton-crear" type="submit" value="Enviar">
             </div>
         </form>
     </main>

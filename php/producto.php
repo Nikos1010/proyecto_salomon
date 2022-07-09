@@ -30,8 +30,8 @@ include_once('./coneccion.php');
                                 <td>$reg[nombre]</td>
                                 <td>$reg[precio]</td>
                                 <td>
-                                    <a class='boton-edit' href=''>Editar</a>
-                                    <a class='boton-rojo' href=''>Borrar</a>
+                                    <a class='boton-edit' href='./crear_producto.php?accion=editar&codigo=$reg[codigo]'>Editar</a>
+                                    <a class='boton-rojo' href='./producto/eliminar.php?codigo=$reg[codigo]'>Borrar</a>
                                 </td>
                             </tr>";
                 }

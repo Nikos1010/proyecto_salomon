@@ -9,16 +9,16 @@
         $insert = mysqli_query($con, "INSERT INTO productos (nombre, img, descripcion, precio)
             VALUES('$nombre','$imagen','$descripcion','$precio');")
             or die("Problemas en el select ".mysqli_error($con));
-    if (isset($insert)) {
-        echo "<script>
-            location.href='../producto.php';
-            </script>";
-    } else {
-        echo "<script>
-            location.href='../producto.php';
-            alert('Los datos no se guardaron');
-            </script>";
-    }
+        if (isset($insert)) {
+            echo "<script>
+                location.href='../producto.php';
+                </script>";
+        } else {
+            echo "<script>
+                location.href='../producto.php';
+                alert('Los datos no se guardaron');
+                </script>";
+        }
     }
 
 ?>
