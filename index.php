@@ -8,6 +8,7 @@
     <title>Tienda Virtual:SBL</title>
     <link rel="Icon" href="./ICO/belleza.png" type="png">
     <link rel="stylesheet" href="./CSS/app.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/style.css" type="text/css">
 </head>
 
 <body>
@@ -55,78 +56,51 @@
     <section class="seccion contenedor">
         <h2>Productos en Venta</h2>
         <div class="contenedor-anuncio">
-            <div class="anuncio">
-                <img src="/IMÁGENES/shampo_salomé.png" alt="Producto">
-                <div class="contenido-anuncio">
-                    <h3>Shampoo Salomé 400ml</h3>
-                    <p>Shampoo libre de sal, previene la caida del cabello estimulando el crecimiento del cabello nutriendo desde la raíz</p>
-                    <p class="precio">$27.900</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="/ICO/libre-de-sal.png" alt="icono sin sal" title="Sin sal">
-                        </li>
-                        <li>
-                            <img src="/ICO/no-toxico.png" alt="no tóxico" title="No tóxico">
-                        </li>
-                        <li>
-                            <img src="/ICO/shampoo.png" alt="Envase" title="Envase">
-                        </li>
-                    </ul>
-                    <a href="/HTML/Anuncios1.html" class="boton-amarillo-block">Ver producto</a>
-                </div>
-            </div>
-
-            <div class="anuncio">
-                <img src="/IMÁGENES/Shampoo_Recamier.png" alt="Producto">
-                <div class="contenido-anuncio">
-                    <h3>Shampoo Recamier 400ml</h3>
-                    <p>Shampoo libre de sal, nutre la raiz y combate la caspa</p>
-                    <p class="precio">$27.900</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="/ICO/libre-de-sal.png" alt="icono sin sal" title="Sin sal">
-                        </li>
-                        <li>
-                            <img src="/ICO/no-toxico.png" alt="No tóxico" title="No tóxico">
-                        </li>
-                        <li>
-                            <img src="/ICO/shampoo.png" alt="Envase" title="Envase">
-                        </li>
-                    </ul>
-                    <a href="/HTML/Anuncios1.html" class="boton-amarillo-block">Ver producto</a>
-                </div>
-            </div>
-
-            <div class="anuncio">
-                <img src="/IMÁGENES/shampo_salomé.png" alt="Producto">
-                <div class="contenido-anuncio">
-                    <h3>Shampoo Salomé 400ml</h3>
-                    <p>Shampoo libre de sal, previene la caida del cabello estimulando el crecimiento del cabello nutriendo desde la raíz</p>
-                    <p class="precio">$27.900</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="/ICO/libre-de-sal.png" alt="icono sin sal" title="Sin sal">
-                        </li>
-                        <li>
-                            <img src="/ICO/no-toxico.png" alt="no tóxico" title="No tóxico">
-                        </li>
-                        <li>
-                            <img src="/ICO/shampoo.png" alt="Envase" title="Envase">
-                        </li>
-                    </ul>
-                    <a href="/HTML/Anuncios1.html" class="boton-amarillo-block">Ver producto</a>
-                </div>
-            </div>
+            <?php
+            include_once('./php/coneccion.php');
+            $registros = mysqli_query($con, "SELECT * FROM Productos")
+                or die("Problemas en el select " . mysqli_error($con));
+            $count = 1;
+            while ($reg = mysqli_fetch_array($registros)) {
+                if ($count <= 3) {
+            ?>
+                    <div class="anuncio">
+                        <img class="img_anun" src=" ./IMÁGENES/<?php echo $reg['img'] ?>.png" alt="Producto">
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $reg['nombre'] ?></h3>
+                            <p><?php echo $reg['descripcion'] ?></p>
+                            <p class="precio">$<?php echo $reg['precio'] ?></p>
+                            <ul class="iconos-caracteristicas">
+                                <li>
+                                    <img src="./ICO/libre-de-sal.png" alt="icono sin sal" title="Sin sal">
+                                </li>
+                                <li>
+                                    <img src="./ICO/no-toxico.png" alt="no tóxico" title="No tóxico">
+                                </li>
+                                <li>
+                                    <img src="./ICO/shampoo.png" alt="Envase" title="Envase">
+                                </li>
+                            </ul>
+                            <a href="./php/single_product.php?codigo=<?php echo $reg['codigo'] ?>" class="boton-amarillo-block">Ver producto</a>
+                        </div>
+                    </div>
+            <?php
+                    $count++;
+                } else {
+                    break;
+                }
+            }
+            ?>
         </div>
         <div class="ver-todas">
-            <a href="/HTML/Anuncios.html" class="boton boton-verde">Ver todas</a>
+            <a href="./php/anuncios.php" class="boton boton-verde">Ver todos</a>
         </div>
     </section>
 
     <section class="imagen-contacto">
         <h2>Encuentra los mejores productos para cabello de la Ciudad</h2>
         <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-        <a href="/HTML/Contacto.html" class="boton boton-amarillo">Contáctenos</a>
+        <a href="./php/contacto.php" class="boton boton-amarillo">Contáctenos</a>
     </section>
 
 

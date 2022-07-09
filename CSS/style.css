@@ -101,3 +101,17 @@ td {
     width: 50px;
     height: 50px;
 }
+
+.img_anun {
+    width: 100px;
+    height: 350px;
+}
+
+.img_single {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.imagen-contacto {
+    background-image: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url("../IMÁGENES/imagenContacto.png");
+}

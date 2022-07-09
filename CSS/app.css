@@ -523,7 +523,7 @@ a {
       height: 45px; }
 
 .imagen-contacto {
-  background-image: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url("/IMÁGENES/imagen.contacto.jpg");
+  background-image: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url("../IMÁGENES/imagenContacto.png");
   background-position: center center;
   background-size: cover;
   padding: 15rem 0;
