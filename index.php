@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Virtual:SBL</title>
-    <link rel="Icon" href="/ICO/belleza.png" type="png">
-    <link rel="stylesheet" href="/CSS/app.css" type="text/css">
+    <link rel="Icon" href="./ICO/belleza.png" type="png">
+    <link rel="stylesheet" href="./CSS/app.css" type="text/css">
 </head>
+
 <body>
     <header class="header inicio">
         <div class="contenedor contenido-header">
             <div class="Barra">
-                <a href="/Index.html">
-                    <img src="/ICO/logo_small.png" alt="Logo"> 
+                <a href="./index.php">
+                    <img src="./ICO/logo_small.png" alt="Logo">
                 </a>
                 <nav class="Navegacion">
-                    <a href="/Index.html">Inicio</a>
-                    <a href="/HTML/Nosotros.html">Nosotros</a>
-                    <a href="/HTML/Anuncios.html">Anuncios</a>
-                    <a href="/HTML/Blog.html">Blog</a>
-                    <a href="/HTML/Contacto.html">Contáctenos</a>
-                </nav>    
+                    <a href="./index.php">Inicio</a>
+                    <a href="./php/nosotros.php">Nosotros</a>
+                    <a href="./php/anuncios.php">Anuncios</a>
+                    <a href="./php/producto.php">Productos</a>
+                    <a href="./php/contacto.php">Contáctenos</a>
+                </nav>
             </div>
             <h1>Venta de productos y servicios de belleza</h1>
         </div>
     </header>
-   
+
 
 
     <main class="contenedor seccion">
         <h2>Sala de Belleza Luz</h2>
         <div class="iconos-nosotros">
             <div class="icono">
-                <img src="/ICO/seguridad.png" alt="Icono de seguridad" loading="lazy">
+                <img src="./ICO/seguridad.png" alt="Icono de seguridad" loading="lazy">
                 <h3>Seguridad</h3>
                 <p>Nuestra web es confiable por lo que sus datos personales y toda la información que nuestro usuario ingrese estará protegida y solo para uso con el fin de poder hacer contacto y aclarar dudas o inquietudes con nuestros asesores.</p>
             </div>
             <div class="icono">
-                <img src="/ICO/dinero.png" alt="Icono de dinero" loading="lazy">
+                <img src="./ICO/dinero.png" alt="Icono de dinero" loading="lazy">
                 <h3>Precio</h3>
                 <p>Brindamos productos y servicios económicos. Ofrecemos diferentes formas de pago seguras además realizamos reembolso solo en caso de que el producto enviado no haya sido el solicitado para esto debe ponerse en contacto con nuestros asesores.</p>
             </div>
             <div class="icono">
-                <img src="/ICO/tiempo.png" alt="Icono de tiempo" loading="lazy">
+                <img src="./ICO/tiempo.png" alt="Icono de tiempo" loading="lazy">
                 <h3>A tiempo</h3>
                 <p>Los productos llegarán en un tiempo determinado dependiendo de su ubicación, entregas rápidas a la hora especificada también garantizamos que el producto llegue en buen estado.</p>
             </div>
@@ -71,7 +73,7 @@
                         </li>
                     </ul>
                     <a href="/HTML/Anuncios1.html" class="boton-amarillo-block">Ver producto</a>
-                </div>    
+                </div>
             </div>
 
             <div class="anuncio">
@@ -113,7 +115,7 @@
                         </li>
                     </ul>
                     <a href="/HTML/Anuncios1.html" class="boton-amarillo-block">Ver producto</a>
-                </div>    
+                </div>
             </div>
         </div>
         <div class="ver-todas">
@@ -127,65 +129,20 @@
         <a href="/HTML/Contacto.html" class="boton boton-amarillo">Contáctenos</a>
     </section>
 
-    <div class="contenedor seccion seccion-inferior">
-        <section class="blog">
-            <h3>Nuestro Blog</h3>
-            <article class="entrada-blog">
-                <div class="imagen">
-                    <img src="/IMÁGENES/Peinado1.jpeg" loading="lazy" alt="Texto de Entrada Blog">
-                </div>
-                <div class="texto-entrada">
-                    <a href="/HTML/Blog.html">
-                        <h4>Peinados y productos</h4>
-                        <p>Escrito el: <span>20/02/2022</span> por: <span>Ana Perez</span></p>
-                        <p>
-                        Excelentes productos de buena calidad además del servicio, variedad de peinados y estilos.
-                        </p>
-                    </a>                        
-                </div>
-            </article>
-
-            <article class="entrada-blog">
-                <div class="imagen">
-                    <img src="/IMÁGENES/Planchado.jpeg" loading="lazy" alt="Texto de Entrada Blog">
-                </div>
-                <div class="texto-entrada">
-                    <a href="/HTML/Blog.html">
-                        <h4>Un buen servicio</h4>
-                        <p>Escrito el: <span>20/02/2022</span> por: <span>Maria Ramirez</span></p>
-                        <p>
-                        Un lugar con personas amables, servicio de buena calidad
-                        </p>
-                    </a>                        
-                </div>
-            </article>
-        </section>
-
-        <section class="testimoniales">
-            <h3>Testimoniales</h3>
-            <div class="testimonial">
-                <blockquote>
-                    El personal se comportó de una exlente forma, una buena atención e increíbles peinados, cortes y productos
-                    estos productos llegaron en una Excelente presentación.
-                </blockquote>
-                <p>- Inés Castilla</p>
-            </div>
-        </section>
-    </div>
-
 
     <footer class="Footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="Navegacion">
-                <a href="/Index.html">Inicio</a>
-                <a href="/HTML/Nosotros.html">Nosotros</a>
-                <a href="/HTML/Anuncios">Anuncios</a>
-                <a href="/HTML/Blog.html">Blog</a>
-                <a href="/HTML/Contacto.html">Contáctenos</a>
-            </nav>    
+                <a href="./index.php">Inicio</a>
+                <a href="./php/nosotros.php">Nosotros</a>
+                <a href="./php/anuncios.php">Anuncios</a>
+                <a href="./php/producto.php">Productos</a>
+                <a href="./php/contacto.php">Contáctenos</a>
+            </nav>
         </div>
         <p class="copyright">Todos los derechos Reservados &copy;</p>
     </footer>
-    
+
 </body>
+
 </html>

@@ -1,0 +1,103 @@
+/* Table */
+table {
+    margin: 0 auto;
+    width: 50%;
+    border: solid 1px black;
+    margin-bottom: 10px;
+
+}
+
+th,
+td {
+    margin: 20px;
+    text-align: center;
+    border: solid 1px black;
+}
+
+.tabla {
+    margin-top: 10px;
+    display: block;
+    justify-content: center;
+}
+
+/* Boton */
+.boton-rojo {
+    background-color: #db2b34;
+    width: 40%;
+    color: #ffff;
+    border-radius: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    display: inline-block;
+    border: none;
+}
+
+.boton-rojo:hover {
+    background-color: #d01010d4;
+    cursor: pointer;
+}
+
+.boton-crear {
+    background-color: #51b617;
+    color: #ffff;
+    font-weight: 500;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    display: inline-block;
+    border: none;
+}
+
+.boton-crear:hover {
+    background-color: #3c8015ce;
+    cursor: pointer;
+}
+
+.boton-edit {
+    background-color: #cfdb2b;
+    color: #ffff;
+    border-radius: 20px;
+    width: 40%;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    display: inline-block;
+    border: none;
+}
+
+.boton-edit:hover {
+    background-color: #bbc714c8;
+    cursor: pointer;
+}
+
+.formP {
+    border-radius: 10px;
+    width: 50%;
+    background: rgb(28, 102, 117);
+    margin: 10px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-style: groove;
+}
+
+.inputt {
+    padding: 15px;
+}
+
+.inputP {
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.img_p {
+    width: 50px;
+    height: 50px;
+}
